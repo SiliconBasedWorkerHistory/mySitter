@@ -3,6 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory android:title="Normal">
+        <Preference
+            app:key="tmp_task_list"
+            app:title="task list"/>
         <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="settings_start_scan_on_start"

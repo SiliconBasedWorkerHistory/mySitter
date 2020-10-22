@@ -42,6 +42,10 @@ public class SettingsActivity extends AppCompatActivity {
                     String addr = String.valueOf(preference.getSummary());
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(addr));
                     startActivity(intent);
+                    break;
+                case "tmp_task_list":
+                    Intent intent1 = new Intent(requireContext(),TaskListActivity.class);
+                    startActivity(intent1);
             }
             return super.onPreferenceTreeClick(preference);
         }
